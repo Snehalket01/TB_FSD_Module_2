@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 92%;
+            margin: auto;
+        }
+
+
+/* nav bar  */
+
+        nav {
+            height: 100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul{
+            width: 53%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 22px;
+        }
+
+        nav ul li{
+            list-style-type: none;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: white;
+            background-color: rgb(16, 99, 155);
+            padding: 5px 19px 6px 20px;
+            border-radius: 18px;
+            border: 2px solid rgb(16, 99, 155);
+        }
+
+        nav ul li a:hover{
+            color: rgb(16, 99, 155);
+            background-color: white;
+            padding: 5px 19px 6px 20px;
+            border-radius: 18px;
+            border: 2px solid rgb(16, 99, 155);
+        }
+
+        nav img {
+            width: auto;
+            height: 85px;
+            margin-top: 10px;
+        }
+
+        div ul {
+            list-style-type: none;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        div ul li a {
+            text-decoration: none;
+
+        }
+
+        h1 {
+            background-color: rgb(16, 99, 155);
+            padding: 12px;
+            color: white;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        form {
+            height: 750px;
+            background-color: rgba(16, 99, 155, 0.145);
+            width: 35%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 50px;
+            padding-left: 90px;
+            padding-right: 50px;
+            padding-bottom: 60px;
+            padding-top: 20px;
+            border-radius: 15px;
+        }
+    .form{
+        height: 900px;
+    }
+
+        form div {
+            margin-top: 25px;
+        }
+
+        button{
+            height: 30px;
+            width: 110px;
+            background-color: rgb(16, 99, 155);
+            color: aliceblue;
+            border-radius: 7px;
+            margin-top: 30px;
+            border-color: white;
+        }
+        button:hover{
+            cursor: pointer;
+            color: rgb(16, 99, 155);
+            border: 2px solid rgb(16, 99, 155);
+            background-color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- logo  -->
+    <nav>
+        <img class="logo"
+            src="images.png"
+            alt="">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="heritage.html">Heritage</a></li>
+                <li><a href="HotelBooking.html">Hotel Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="MoreAboutCity.html">More About Maharashtra</a></li>
+            </ul>
+    </nav>
+    <hr>
+   
+
+
+    <h1>Hotel Booking Form</h1>
+
+    <!-- form  -->
+    <div class="form">
+
+        <form action="">
+            <div>
+                <label for="Name">Name</label><br>
+                <input style="width: 200px; height: 20px; border-radius: 5px; margin-top: 5px;" type="text" placeholder="First Name">
+                <input style="width: 200px; height: 20px; border-radius: 5px; margin-top: 5px;" type="text" placeholder="Last Name">
+            </div>
+
+            <div>
+                <label for="email">Email</label><br>
+                <input style="width:300px; margin-top: 5px;
+                height: 20px;
+                border-radius: 5px;" type="email" name="email" id="email" placeholder="Enter Email">
+            </div>
+
+            <div>
+                <label for="number">Mobile Number</label><br>
+                <input style="width:300px; margin-top: 5px;
+                height: 20px;
+                border-radius: 5px;" type="number" name="number" id="number" placeholder="Enter Mobile Number">
+            </div>
+
+            <div>
+                <label for="guest">Number of guests</label><br>
+                <input style="width: 200px; height: 20px; border-radius: 5px; margin-top: 5px;" type="number" name="guest" id="guest" placeholder="Enter no of guests" min="1"
+                    max="10">
+            </div>
+
+            <div>
+                <label for="roomtype">Room Type</label><br>
+                <select style="width:200px; height:25px; margin-top:5px; border-radius:5px;" name="roomtype"
+                    id="roomtype">
+                    <option value="">Room</option>
+                    <option value="1 Room">1 Room</option>
+                    <option value="2 Room">2 Room</option>
+                    <option value="3 Room">3 Room</option>
+                    <option value="4 Room">4 Room</option>
+                    <option value="5 Room">5 Room</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="arrival">Arrival :</label> &nbsp; &nbsp; &nbsp; &nbsp;
+                <input style="width:150px;" type="date" name="arrival" id="arrival">
+                <input style="width:100px;" type="time" name="arrival" id="arrival"><br>
+
+                <label for="arrival">Departure :</label> &nbsp;
+                <input style="width:150px;" type="date" name="arrival" id="arrival">
+                <input style="width:100px;" type="time" name="arrival" id="arrival">
+            </div>
+
+            <div>
+                <label for="pickup">Free Pickup :</label><br>
+                <input type="radio" name="yes" id="yes">
+                <label for="yes">Yes, Sure!</label><br>
+
+                <input type="radio" name="no" id="np">
+                <label for="no">No, I already rented a car.</label>
+            </div>
+
+            <div>
+                <label for="textarea">Other Requests</label><br>
+                <textarea style="margin-top: 5px;" name="" id="" cols="50" rows="7"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+        <!-- footer  -->
+        <div style="background-color:rgb(16, 99, 155); padding: 10px; text-align: center; color: white; margin-top: 40px;" class="cr">
+            Copyright &#169; 2022
+        </div>
+    </div>
+</body>
+
+</html>
